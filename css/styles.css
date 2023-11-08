@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+    overflow-x: hidden;
+  }
+
+/* START: CSS Variables */
+:root {
+    --white: #ffffff;
+    --blue: #ebf5fb;
+    --darkBlue: #111e49;
+    --green: #4caf50;
+  }
+/* END: CSS Variables */
+
+/* START: Home Top Bar */
+.home-top-bar{
+    background-color: var(--blue);
+    padding: 0.4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+
+.home-top-bar-right ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.home-top-bar-right ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* END: Home Top Bar */
