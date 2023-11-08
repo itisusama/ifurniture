@@ -37,3 +37,42 @@ html,body{
     color: black;
 }
 /* END: Home Top Bar */
+
+/* START: Search Section */
+.nav-search-section{
+    background-color: var(--white);
+    padding: 8%;
+    margin-left: 25%;
+}
+
+#searchBox{
+    width: 32vw;
+    height: 6vh;
+    padding: 0 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.search-trending-box a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid black;
+}
+#searchSection {
+    display: none;
+}
+
+#searchSection.active {
+    display: block;
+}
+
+#closeSearch {
+    display: none;
+}
+
+#searchSection.active #closeSearch {
+    display: block;
+}
+/* END: Search Section */
