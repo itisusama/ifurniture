@@ -15,8 +15,10 @@
 </head>
 <body>
     
-    <!-- START: Top Bar -->
-    <section class="home-top-bar">
+    <!-- START: Navbar -->
+    <nav>
+      <!-- START: Top Bar -->
+      <section class="home-top-bar">
         <div class="home-top-bar-left"><p>Free Same-Day Delivery</p></div>
 
         <div class="home-top-bar-right">
@@ -30,8 +32,6 @@
     </section>
     <!-- END: Top Bar -->
 
-    <!-- START: Navbar -->
-    <nav>
         <div class="wrapper">
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
@@ -86,7 +86,7 @@
       </nav>
     <!-- END: Navbar -->
 
-    <!-- START: seatch box -->
+    <!-- START: search box -->
     <section class="nav-search-section" id="searchSection">
         <div class="serach-heading"><h4>Search www.ifurniture.com</h4></div><br>
         <input type="text" id="searchBox" placeholder="Serach Your Item">
@@ -101,10 +101,70 @@
             <a href="#">Item4</a>
         </div>
     </section>
-    <!-- END: seatch box -->
+    <!-- END: search box -->
 
+    <!-- START: Home Page Carousel -->
+    <section class="home-slider-container">
+      <div class="slider">
+        <div class="slide"><img src="assets/slide1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="assets/slide2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="assets/slide3.jpg" alt="Slide 3"></div>
+      </div>
+      <div class="arrow left" onclick="prevSlide()">‹</div>
+      <div class="arrow right" onclick="nextSlide()">›</div>
+    </section>
+    <!-- END: Home Page Carousel -->
+
+    <!-- START: Product Selection -->
+    <section class="product-selection">
+      
+      <div class="discount-box">
+        <p>50% off on all products!</p><br>
+        <a href="#">Avail Now</a>
+      </div>
+
+      <div class="middle-image zoom-back">
+        <img src="assets/furniture.jpg" alt="1">
+        <div class="bottom-left"><a href="#"><h4>ITEM 1</h4></a></div>
+      </div>
+
+      <div class="right-image zoom-back">
+        <img src="assets/furniture2.jpg" alt="1">
+        <div class="bottom-left"><a href="#"><h4>ITEM 2</h4></a></div>
+      </div>
+    </section>
+    <!-- END: Product Selection -->
+
+        <!-- START: Product Selection -->
+        <section class="product-selection" style="margin-top: 20px;">
+      
+          <div class="second-right-image zoom-back">
+            <img src="assets/furniture2.jpg" alt="1">
+            <div class="bottom-left"><a href="#"><h4>ITEM 3</h4></a></div>
+          </div>
+    
+          <div class="second-right-image zoom-back">
+            <img src="assets/furniture2.jpg" alt="1">
+            <div class="bottom-left"><a href="#"><h4>ITEM 4</h4></a></div>
+          </div>
+    
+          <div class="second-right-image zoom-back">
+            <img src="assets/furniture2.jpg" alt="1">
+            <div class="bottom-left"><a href="#"><h4>ITEM 5</h4></a></div>
+          </div>
+
+          <div class="second-right-image zoom-back">
+            <img src="assets/furniture2.jpg" alt="1">
+            <div class="bottom-left"><a href="#"><h4>ITEM 6</h4></a></div>
+          </div>
+
+        </section>
+        <!-- END: Product Selection -->
+
+    
     <!-- START: Script files -->
     <script src="script/searchbox.js"></script>
+    <script src="script/homeslider.js"></script>
     <!-- END: Script files -->
 </body>
 </html>

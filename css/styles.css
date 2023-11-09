@@ -17,6 +17,16 @@ html,body{
   }
 /* END: CSS Variables */
 
+/* Utility */
+.zoom-back {
+    transition: transform 0.3s ease;
+  }
+  
+  .zoom-back:hover {
+    transform: scale(0.9);
+  }
+/* Utility */
+
 /* START: Home Top Bar */
 .home-top-bar{
     background-color: var(--blue);
@@ -46,6 +56,7 @@ html,body{
 }
 
 #searchBox{
+    position: absolute;
     width: 32vw;
     height: 6vh;
     padding: 0 10px;
@@ -76,3 +87,125 @@ html,body{
     display: block;
 }
 /* END: Search Section */
+
+/* START: Image Crousel */
+.home-slider-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .arrow.left {
+    left: 10px;
+  }
+
+  .arrow.right {
+    right: 10px;
+  }
+/* END: Image Crousel */
+
+/* START: Product Selection */
+
+.product-selection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.discount-box{
+    padding: 5%;
+    border: 5px solid black;
+    width: 180px;
+}
+
+.discount-box a{
+    text-decoration: none;
+    color: black;
+}
+
+.discount-box a:hover{
+    text-decoration: underline;
+}
+
+.middle-image, .right-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.middle-image img{
+    width: 500px;
+    height: 403px;
+}
+
+.right-image img{
+    width: 300px;
+    height: 403px;
+}
+
+.bottom-left {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+.bottom-left a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bottom-left h4 {
+    margin: 0;
+}
+
+.second-right-image img{
+    width: 270px;
+    height: 403px;
+}
+
+/* END: Product Selection */
+
+/* START: Media Query */
+@media (max-width: 786px){
+    .discount-box{
+        width: 80%;
+    }
+
+    .middle-image img{
+        width: 100%;
+    }
+    
+    .right-image img{
+        width: 100%;
+    }
+}
+/* END: Media Query */
