@@ -217,7 +217,7 @@ body {
 .item-card {
     padding: 20px;
     background-color: var(--white);
-    width: 28%;
+    /* width: 28%; */
     border: 2px solid var(--lightGrey);
     border-radius: 10px;
 }
@@ -376,6 +376,45 @@ body {
 
 /* END: Quality Section */
 
+/* START: Footer */
+.footer-blocks{
+    background-color: var(--blue);
+    padding: 50px 20px;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.footer-block-one p{
+    color: grey
+}
+
+.footer-block-one .footer-logo{
+    color: var(--darkBlue);
+}
+
+.footer-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-block-two a, .footer-block-three a, .footer-block-four a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-block-two h2, .footer-block-three h2, .footer-block-four h2{
+    color: #6ec1e4;
+}
+.payments{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+}
+/* END: Footer */
+
 /* START: Media Query */
 @media (max-width: 786px) {
     .discount-box {
@@ -414,6 +453,27 @@ body {
     .home-top-bar {
       font-size: xx-small;
     }
+
+    .footer-blocks{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* END: Media Query */
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
