@@ -14,6 +14,7 @@ html,body{
     --blue: #ebf5fb;
     --darkBlue: #111e49;
     --green: #4caf50;
+    --lightGrey: #e8e8e8;
   }
 /* END: CSS Variables */
 
@@ -193,6 +194,67 @@ html,body{
 }
 
 /* END: Product Selection */
+
+
+/* START: Item Slider */
+.items-slider-heading{
+    text-align: center;
+    color: var(--darkBlue);
+}
+
+.items-slider-heading h1{
+    font-size: 52px;
+}
+
+.item-card{
+    padding: 20px;
+    background-color: var(--white);
+    width: 230px;
+    border: 2px solid var(--lightGrey);
+    border-radius: 30px;
+}
+.item-card-image{
+    position: relative;
+}
+
+.item-card-image img{
+    width: 230px;
+    height: 180px;
+}
+
+.item-card-image span{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    background-color: var(--darkBlue);
+    color: var(--white);
+}
+
+.item-card-slider{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+}
+
+
+#nslider-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  #nslider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nslide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+/* END: Item Slider */
 
 /* START: Media Query */
 @media (max-width: 786px){
