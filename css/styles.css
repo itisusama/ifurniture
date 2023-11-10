@@ -447,6 +447,13 @@ body {
     .description-container {
         max-width: 100%;
     }
+
+    .home-slider-container {
+        position: relative;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 487px){
