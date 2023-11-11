@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* START: CSS Variables */
+:root {
+    --white: #ffffff;
+    --blue: #ebf5fb;
+    --darkBlue: #111e49;
+    --green: #4caf50;
+    --lightGrey: #e8e8e8;
+}
+
+/* END: CSS Variables */
+
+.main-container{
+    padding: 0 20px;
+}
+
+/* START: Hero Section */
+.hero-section{
+    border-radius: 10px;
+    background-image: url("../assets/furniturebanner.jpg");
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% auto;
+
+    position: relative;
+}
+/* END: Hero Section */
+
+/* START: Hero Info */
+.hero-info{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.hero-info-heading, .hero-info-links{
+    padding: 20px;
+    background-color: var(--blue);
+    width: fit-content;
+}
+
+.hero-info-heading h1{
+    font-weight: 900;
+}
+
+.hero-info-links ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-info-links a{
+    text-decoration: none;
+    color: black;
+}
+.hero-info-links a:hover{
+    text-decoration: underline;
+}
+/* END: Hero Info */
+
+/* START: Text Area Section */
+.text-area-section{
+    padding: 20px 30px;
+}
+.text-area-table{
+    margin-top: 20px;
+}
+
+.text-area-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.text-area-table th, .text-area-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.text-area-table th {
+    background-color: #f2f2f2;
+}
+/* END: Text Area Section */
+
+/* START: Media Queries */
+@media (max-width: 1020px){
+    .hero-section{
+        border-radius: 10px;
+        width: 100%;
+        height: 270px;
+    }
+}
+
+@media (max-width: 870px){
+    .hero-section{
+        border-radius: 10px;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px){
+    
+    .hero-info-heading, .hero-info-links{
+        padding: 20px;
+        background-color: var(--blue);
+        width: 100%;
+        text-align: center;
+        font-size: xx-small;
+    }
+}
+
+@media (max-width: 450px){
+    .hero-section{
+        border-radius: 10px;
+        width: 100%;
+        height: 200px;
+        background-size: 100% 300px;
+    }
+
+    .hero-info{
+        position: absolute;
+        bottom: 50px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 370px){
+    
+    .hero-info-heading, .hero-info-links{
+        padding: 20px;
+        background-color: var(--blue);
+        width: 90%;
+        text-align: center;
+        font-size: xx-small;
+    }
+}
+/* END: Media Queries */

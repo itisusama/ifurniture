@@ -278,9 +278,8 @@ body {
     width: 100vw;
     height: 700px;
     background-image: url("../assets/banner.jpg");
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
 
     display: flex;
     justify-content: center;
@@ -415,7 +414,22 @@ body {
 }
 /* END: Footer */
 
+
+
 /* START: Media Query */
+
+@media (max-width: 1020px){
+    .help-section {
+        margin-top: 20px;
+        width: 100vw;
+        height: 350px;
+    }
+
+    .items-cards-section .item-card {
+        width: 26%;
+    }
+}
+
 @media (max-width: 786px) {
     .discount-box {
         width: 80%;
@@ -431,6 +445,29 @@ body {
 
     .items-cards-section .item-card {
         width: 25%;
+    }
+    
+    .help-section {
+        margin-top: 20px;
+        width: 100vw;
+        height: 350px;
+    }
+
+    .help-section{
+        position: relative;
+    }
+
+    .help-description{
+        position: absolute;
+        top: 30px;
+    }
+
+    .help-description .first-heading{
+        font-size: 28px;
+    }
+    
+    .help-description .second-heading{
+        font-size: 28px;
     }
 }
 
@@ -468,7 +505,14 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .help-section {
+        margin-top: 20px;
+        width: 100vw;
+        height: 250px;
+    }
 }
+
 
 /* END: Media Query */
   .swiper-slide {
