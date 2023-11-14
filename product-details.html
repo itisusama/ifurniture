@@ -355,12 +355,14 @@
                 <h2>Product Reviews</h2>
     
                 <div class="my-review">
+                  <img src="assets/furniture.jpg" alt="avatar" width="50px" height="50px" style="border-radius: 50%;">
                     <p class="reviewer-name">Person</p>
                     <p class="review-date">November 1, 2023</p>
                     <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in justo eu elit auctor hendrerit.</p>
                 </div>
     
                 <div class="my-review">
+                  <img src="assets/furniture.jpg" alt="avatar" width="50px" height="50px" style="border-radius: 50%;">
                     <p class="reviewer-name">Person</p>
                     <p class="review-date">October 25, 2023</p>
                     <p class="review-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -369,15 +371,17 @@
 
             <div class="rating-section">
                 <button class="add-review-button" onclick="toggleReviewForm()">Add Review</button>
-                <div class="review-form">
+                <form action="#" method="post">
+                  <div class="review-form">
                     <label for="reviewerName">Your Name:</label>
                     <input type="text" id="reviewerName" name="reviewerName" required>
     
                     <label for="reviewText">Your Review:</label>
                     <textarea id="reviewText" name="reviewText" required></textarea>
     
-                    <button onclick="submitReview()">Submit Review</button>
-                </div>
+                    <button type="button">Submit Review</button>
+                  </div>
+                </form>
             </div>
 
         </section>
